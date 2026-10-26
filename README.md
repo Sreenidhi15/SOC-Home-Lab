@@ -51,7 +51,7 @@ This project simulates a real-world enterprise environment to practice threat de
 
 ![Server Manager Dashboard](screenshots/01-server-manager-ad-ds.png)
 
-**Proof:** Windows Server 2022 with AD DS and DNS services installed and operational.
+Windows Server 2022 with AD DS and DNS services installed and operational.
 
 </div>
 
@@ -63,7 +63,7 @@ This project simulates a real-world enterprise environment to practice threat de
 
 ![Active Directory Users](screenshots/02-active-directory-users.png)
 
-**Proof:** SOC team users successfully created:
+SOC team users successfully created:
 - **asmith** - Alice Smith (SOC Analyst)
 - **bjones** - Bob Jones (SOC Analyst)  
 - **mbrown** - Macy Brown (Security Manager)
@@ -80,7 +80,7 @@ Domain: `cyberlab.local`
 
 ![Windows 10 Domain Properties](screenshots/03-windows-10-domain-joined.png)
 
-**Proof:** Windows 10 client successfully joined to `cyberlab.local` domain.
+Windows 10 client successfully joined to `cyberlab.local` domain.
 
 - **Computer Name:** DESKTOP-2DV84F6.cyberlab.local
 - **Domain:** cyberlab.local
@@ -96,7 +96,7 @@ Domain: `cyberlab.local`
 
 ![Splunk Search Results](screenshots/04-splunk-search-results.png)
 
-**Proof:** Splunk Enterprise successfully collecting Windows Security Event Logs showing:
+Splunk Enterprise successfully collecting Windows Security Event Logs showing:
 - **EventCode=4625** - Failed Login attempts
 - **Source:** DESKTOP-2DV84F6.cyberlab.local
 - **Data Ingestion:** Working and parsing correctly
@@ -111,7 +111,7 @@ Domain: `cyberlab.local`
 
 ![Ubuntu Server Login](screenshots/05-ubuntu-server-booted.png)
 
-**Proof:** Ubuntu 22.04.5 LTS running with Splunk service initialized.
+Ubuntu 22.04.5 LTS running with Splunk service initialized.
 
 </div>
 
@@ -123,7 +123,7 @@ Domain: `cyberlab.local`
 
 ![Splunk Home Page](screenshots/06-splunk-home-login.png)
 
-**Proof:** Splunk Enterprise 10.2.1 web interface accessible and authenticated as admin.
+Splunk Enterprise 10.2.1 web interface accessible and authenticated as admin.
 
 </div>
 
@@ -135,7 +135,7 @@ Domain: `cyberlab.local`
 
 ![Splunk Dashboard](screenshots/07-splunk-dashboard-complete.png)
 
-**Proof:** Complete dashboard with all monitoring panels configured and visible:
+Complete dashboard with all monitoring panels configured and visible:
 
 - **Failed Logins Over Time** - Timeline chart
 - **Top Attacked Accounts** - Bar chart visualization  
