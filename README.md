@@ -47,33 +47,38 @@ This project simulates a real-world enterprise environment to practice threat de
 
 ### Server Manager - Active Directory Domain Services Running
 
-![Server Manager Dashboard](screenshots/4.png)
+<div align="center">
 
-**Proof:** Windows Server 2022 with AD DS (Active Directory Domain Services) and DNS services installed and operational.
+![Server Manager Dashboard](screenshots/01-server-manager-ad-ds.png)
 
-- **Role Installed:** AD DS
-- **DNS Server:** Configured and running
-- **Status:** Active and healthy
+**Proof:** Windows Server 2022 with AD DS and DNS services installed and operational.
+
+</div>
 
 ---
 
 ### Active Directory Users and Computers
 
-![Active Directory Users](screenshots/6.png)
+<div align="center">
 
-**Proof:** SOC team users successfully created in Active Directory:
+![Active Directory Users](screenshots/02-active-directory-users.png)
 
+**Proof:** SOC team users successfully created:
 - **asmith** - Alice Smith (SOC Analyst)
 - **bjones** - Bob Jones (SOC Analyst)  
 - **mbrown** - Macy Brown (Security Manager)
 
-**Domain:** `cyberlab.local`
+Domain: `cyberlab.local`
+
+</div>
 
 ---
 
 ### Windows 10 Endpoint - Domain Joined
 
-![Windows 10 Domain Properties](screenshots/8.png)
+<div align="center">
+
+![Windows 10 Domain Properties](screenshots/03-windows-10-domain-joined.png)
 
 **Proof:** Windows 10 client successfully joined to `cyberlab.local` domain.
 
@@ -81,39 +86,54 @@ This project simulates a real-world enterprise environment to practice threat de
 - **Domain:** cyberlab.local
 - **Status:** Domain membership confirmed
 
+</div>
+
 ---
 
 ### Splunk Log Collection - EventCode=4625 Detected
 
-![Splunk Search Results](screenshots/9.png)
+<div align="center">
+
+![Splunk Search Results](screenshots/04-splunk-search-results.png)
 
 **Proof:** Splunk Enterprise successfully collecting Windows Security Event Logs showing:
-
 - **EventCode=4625** - Failed Login attempts
 - **Source:** DESKTOP-2DV84F6.cyberlab.local
 - **Data Ingestion:** Working and parsing correctly
+
+</div>
 
 ---
 
 ### Ubuntu Splunk Server - Successfully Booted
 
-![Ubuntu Server Login](screenshots/21.png)
+<div align="center">
+
+![Ubuntu Server Login](screenshots/05-ubuntu-server-booted.png)
 
 **Proof:** Ubuntu 22.04.5 LTS running with Splunk service initialized.
+
+</div>
 
 ---
 
 ### Splunk Web Interface - Admin Logged In
 
-![Splunk Home Page](screenshots/28.png)
+<div align="center">
+
+![Splunk Home Page](screenshots/06-splunk-home-login.png)
 
 **Proof:** Splunk Enterprise 10.2.1 web interface accessible and authenticated as admin.
+
+</div>
 
 ---
 
 ### SOC Home Lab - Brute Force Monitor Dashboard
 
-![Splunk Dashboard](screenshots/30.png)
+<div align="center">
+
+![Splunk Dashboard](screenshots/07-splunk-dashboard-complete.png)
 
 **Proof:** Complete dashboard with all monitoring panels configured and visible:
 
@@ -123,6 +143,8 @@ This project simulates a real-world enterprise environment to practice threat de
 - **Login Success vs Failure** - Comparison metrics
 - **Targeted Machines** - Machine-focused data
 - **Failed Logins by User** - User activity tracking
+
+</div>
 
 ---
 
@@ -326,11 +348,18 @@ index=endpoint EventCode=4625
 
 ```
 SOC-Home-Lab/
-├── README.md                  # Complete documentation
-├── screenshots/               # All proof screenshots (31 total)
-├── setup-notes/              # Detailed setup instructions
-├── splunk-queries/           # SPL queries and alerts
-└── .gitignore               # Git configuration
+├── README.md                              # Complete documentation
+├── screenshots/                           # All proof screenshots
+│   ├── 01-server-manager-ad-ds.png
+│   ├── 02-active-directory-users.png
+│   ├── 03-windows-10-domain-joined.png
+│   ├── 04-splunk-search-results.png
+│   ├── 05-ubuntu-server-booted.png
+│   ├── 06-splunk-home-login.png
+│   └── 07-splunk-dashboard-complete.png
+├── setup-notes/                           # Detailed setup instructions
+├── splunk-queries/                        # SPL queries and alerts
+└── .gitignore                             # Git configuration
 ```
 
 ---
