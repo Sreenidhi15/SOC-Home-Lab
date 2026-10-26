@@ -79,8 +79,6 @@ NAT Network: 192.168.10.0/24
 **Network type:** VMware NAT Network
 **Network range:** 192.168.10.0/24
 
-![Virtual Network Editor](screenshots/01-network-config.png)
-
 ---
 
 ## Active Directory Configuration
@@ -88,6 +86,8 @@ NAT Network: 192.168.10.0/24
 - **Domain:** `cyberlab.local`
 - **Domain Controller:** Windows Server 2022 (`192.168.10.7`)
 - **DNS:** Configured and operational
+
+![Server Manager — AD DS Role Installed](screenshots/01-server-manager-ad-ds.png)
 
 ### Domain Users
 
@@ -229,7 +229,7 @@ All queries and their full SPL are documented in [`splunk-queries/queries.md`](s
 SOC-Home-Lab/
 ├── README.md                    # Complete documentation
 ├── screenshots/                 # All proof screenshots
-│   ├── 01-network-config.png
+│   ├── 01-server-manager-ad-ds.png
 │   ├── 02-active-directory-users.png
 │   ├── 03-windows-10-domain-joined.png
 │   ├── 04-splunk-search-results.png
